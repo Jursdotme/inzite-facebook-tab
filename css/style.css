@@ -1,0 +1,114 @@
+.facebook-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+}
+
+.facebook-navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 15px 30px;
+}
+.facebook-navbar h3 {
+  margin: 0;
+}
+
+.facebook-content {
+  max-width: 100%;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10000000;
+  left: 0;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.35);
+  height: 100%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
+  transform: translateX(-500px);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.facebook-content.visible {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.facebook-trigger {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999999999;
+  background-color: #2e4da7;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 5px 10px 7px;
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  -webkit-transform: translateX(0) translateY(415px) rotate(-90deg);
+  -moz-transform: translateX(0) translateY(415px) rotate(-90deg);
+  -ms-transform: translateX(0) translateY(415px) rotate(-90deg);
+  -o-transform: translateX(0) translateY(415px) rotate(-90deg);
+  transform: translateX(0) translateY(415px) rotate(-90deg);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.facebook-trigger.visible {
+  -webkit-transform: translateX(500px) translateY(415px) rotate(-90deg);
+  -moz-transform: translateX(500px) translateY(415px) rotate(-90deg);
+  -ms-transform: translateX(500px) translateY(415px) rotate(-90deg);
+  -o-transform: translateX(500px) translateY(415px) rotate(-90deg);
+  transform: translateX(500px) translateY(415px) rotate(-90deg);
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.facebook-trigger:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 555px) {
+  .facebook-trigger {
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    top: initial;
+    transform: none;
+    border-radius: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  .facebook-trigger.visible {
+    transform: none;
+  }
+}
