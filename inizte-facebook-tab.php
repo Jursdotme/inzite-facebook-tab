@@ -7,6 +7,7 @@
 * Author: Rasmus Jürs
 * Author URI: http://jurs.me
 * License: GPL2
+* GitHub Plugin URI: https://github.com/Jursdotme/inzite-facebook-tab
 */
 
 function themeslug_enqueue_style() {
